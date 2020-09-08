@@ -1,5 +1,5 @@
-import os
 from __future__ import with_statement
+import os
 
 import logging
 from logging.config import fileConfig
