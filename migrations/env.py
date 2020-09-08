@@ -56,7 +56,7 @@ def run_migrations_offline():
 def get_url():
     db = os.getenv('DATABASE_URL')
     return db
-    
+
 def run_migrations_online():
     """Run migrations in 'online' mode.
 
@@ -81,7 +81,7 @@ def run_migrations_online():
     #     poolclass=pool.NullPool,
     # )
 
-    connectable = create_engine(get_url()):
+    connectable = create_engine(get_url())
 
     with connectable.connect() as connection:
         context.configure(
